@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="vue.js"></script>
+    <link rel="stylesheet" href="guanli.css" type="text/css">
+    <style>
+      #dibu{
+    position: relative;
+    top: -10px;
+    height: 50px;
+    background-color:darkgrey;
+    z-index: -1;
+    width: 1473px;
+    left: 65px;
+    }
+    #dibu span{
+      position: relative;
+      left: 550px;
+      font-size: 20px;
+    }
+    .qqq{
+      position: relative;
+      left: 50px;
+    }
+    </style>
+</head>
+<body>
+    <div id="a">
+        <div id="broadside">                    <!--侧边栏-->
+          <div id="rxx">
+            <img src="img\telephone.png" alt="" id="dh">
+            <span id="rx">热线:100-100-100<br/>人工客服:200-200-200</span>
+          </div>
+          <div id="wbb">
+           <img src="img\wb.png" alt="" id="wb">
+           <img src="img\ewm.png" alt="" id="weib">
+          </div>
+          <div id="gzhh">
+           <img src="img\gzh.png" alt="" id="gzh">
+           <img src="img\ewm.png" alt="" id="gongzh">
+          </div>
+          <div id="dyy">
+           <img src="img\dy.png" alt="" id="dy">
+           <img src="img\ewm.png" alt="" id="douy">
+          </div>
+          <div id="bzz">
+           <img src="img\bz.png" alt="" id="bz">
+           <img src="img\ewm.png" alt="" id="biz">
+          </div>
+          
+        </div> 
+        <div id="aa"></div>
+        <div id="navigation">
+        <ul id="app">
+            <li><span>Z市图书馆</span></li>
+            <li v-for="(data,index) in datalist"> 
+              <a href="#" :target="frame1"  :class="current==index? 'active':'' " @click="dianji(index)">{{ data }}</a> <!--current=0 index等于0 所以运行active 两者不相等不运行active 为空-->
+            </li> 
+        </ul>
+        </div> 
+        <div id="index">
+          <iframe :name="frame1" :src="lianjie[asd]"
+          marginwidth="0" marginheight="0" frameborder="0"
+          border="0" scrolling="no" height="auto" width=""></iframe>
+          </div>
+          <div id="dibu">
+            <span>联系我们：热线:100-100-100      人工客服:200-200-200 </span><br>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span>@2022 Z市图书馆   作者：张威炜</span>
+          </div>
+   </div>
+    <script>
+      var a = new Vue({
+        el:"#a",
+        data:{
+          datalist:['借\还书','新闻管理','图书上新','热销图书','全部图书','查询状态','退出'],
+          lianjie:['jh.php','xwtj.php','sx.php','rx.php','qb.php','zt.php','tc.php'],
+          current:0,
+          asd:0,
+        },
+        methods:{
+          dianji:function(index){
+            this.current = index;     //index的值传给current
+            this.asd = index;
+          }
+        }
+      })
+    </script>
+</body>
+</html>

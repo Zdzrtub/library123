@@ -1,0 +1,185 @@
+body{
+    background:url(beij.png);
+}
+#broadside{                  /*左侧定位栏*/
+    position: fixed;
+    background-color: black;
+    left: 0px;
+    top: 0px;
+    /* height: 1080px; */
+    width: 45px;
+    bottom: 0px;
+}
+
+#navigation{
+    position: relative;
+    width: 1491px;
+    left: 37px;
+    top: -16px;
+    z-index: -1;
+}
+ ul{
+    list-style-type: none;
+    background-color: red;
+    
+}
+li{
+    float: left;
+    font-size: 35px;
+}
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 25px;
+    text-decoration: none;
+    position: relative;
+    left: 430px;
+    font-size: 20px;
+    top: 3px;
+    background-color: #6a89cc;
+}
+li span{
+    background-color: #6a89cc;
+    position: relative;
+    top: 9px;
+}
+#zhuce{
+    position: relative;
+    left: 800px;
+    top: -54px
+}
+li a:hover{
+    background-color: #0c2461;
+} 
+.active{
+    background-color: #0c2461;
+}
+ #a{
+    background: #6a89cc;
+    z-index: -1;
+    position: absolute;
+    top: -3px;
+    width: 1538px; 
+    left: -20px;
+    right: 0px;
+    height: 60px;
+}
+#dh{                     /*热线*/
+    position: fixed;
+    top: 150px;
+    width:45px;
+}
+#dh:hover{
+    background-color: #718093;
+}
+#rx{
+    display: none;
+    background: #718093;
+    position: relative;
+    left: 45px;
+    width: 150px;
+    top: 140px;
+}
+#rxx:hover #rx{   
+    display: block;
+}
+
+#wb{
+    position: fixed;    /*微博*/
+    top: 250px;
+    width:45px;
+}
+#wb:hover{
+    background-color: #718093;
+}
+#weib{
+    display: none;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 50px;
+    top: 220px;
+}
+ #wbb:hover #weib{         /* 触摸到wbb这个块的时候显示 weib这个图片*/
+    display: block;
+}
+
+
+#gzh{
+    position: fixed;    /*公众号*/
+    top: 350px;
+    width:45px;
+}
+#gzh:hover{
+    background-color: #718093;
+}
+#gongzh{
+    display: none;
+    position: relative;
+    width: 100xp;
+    height: 100px;
+    left: 50px;
+    top: 330px;
+}
+#gzhh:hover #gongzh{
+    display: block;
+}
+
+
+#dy{
+    position: fixed;    /*抖音*/
+    top: 450px;
+    width:45px;
+}
+#dy:hover{
+    background-color: #718093;
+}
+#douy{
+    display: none;
+    position:absolute;
+    height: 100px;
+    width: 100px;
+    left: 50px;
+    top: 420px;
+}
+#dyy:hover #douy{
+    display: block;
+}
+
+
+#bz{
+    position: fixed;    /*哔哩哔哩*/
+    top: 550px;
+    width:40px;
+}
+#bz:hover{
+    background-color: #718093;
+}
+#biz{
+    display: none;
+    position: relative;
+    height: 100px;
+    width: 100px;
+    left: 50px;
+    top: 530px;
+}
+#bzz:hover #biz{
+    display: block;
+}
+#index{
+    position: relative;
+    background-color:red;
+    width: 50px;
+    height: auto;
+    top: 45px;
+    z-index: -1;
+}
+iframe{
+    position: relative;
+    height: 1300px;
+    width: 1200px;
+    left: 200px;
+    top: -50px;
+    z-index: -1;
+}
